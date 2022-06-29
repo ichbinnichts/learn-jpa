@@ -30,4 +30,25 @@ public class Student {
     public Long getId(){
         return this.id;
     }
+    public String getFirst_name(){
+        return this.first_name;
+    }
+    public String getLast_name(){
+        return this.last_name;
+    }
+    public String getEmail(){
+        return this.email;
+    }
+    public int getAge(){
+        return this.age;
+    }
+
+    public Student(Long id, String first_name, String last_name, String email, int age) {
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+        this.age = age;
+    }
+    
 }
