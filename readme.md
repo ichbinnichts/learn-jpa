@@ -1,2 +1,2 @@
 ### NOTES 
-Added student class and added its variables
+Added @Id, @Entity, @GeneratorSequence, @GeneratedValue
