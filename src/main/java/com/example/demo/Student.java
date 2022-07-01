@@ -1,11 +1,24 @@
 package com.example.demo;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 @Entity
 public class Student {
     @Id
+    @SequenceGenerator(
+        sequenceName = "student_sequence",
+        name = "student_sequence",
+        allocationSize = 1
+        
+    )
+    @GeneratedValue(
+        strategy = GenerationType.SEQUENCE,
+        generator = "student_sequence"
+    )
     private Long id;
     private String first_name;
     private String last_name;
