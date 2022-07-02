@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,10 +20,33 @@ public class Student {
         strategy = GenerationType.SEQUENCE,
         generator = "student_sequence"
     )
+    @Column(
+        name = "id",
+        updatable = false
+    )
     private Long id;
+    @Column(
+        name = "first_name",
+        nullable = false,
+        columnDefinition = "TEXT"
+    )
     private String first_name;
+    @Column(
+        name = "last_name",
+        nullable = false,
+        columnDefinition = "TEXT"
+    )
     private String last_name;
+    @Column(
+        name = "email",
+        nullable = false,
+        columnDefinition = "TEXT"
+    )
     private String email;
+    @Column(
+        name = "age",
+        nullable = false
+        )
     private int age;
 
     public void setId(Long id){
