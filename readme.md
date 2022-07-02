@@ -1,2 +1,3 @@
 ### NOTES ###
-This is a project to learn java data jpa 
+//Column
+Setting up the columns
