@@ -1,3 +1,2 @@
 ### NOTES ###
-//Column
-Setting up the columns
+//Tables and constraints
